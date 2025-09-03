@@ -1,0 +1,27 @@
+cohere==5.5.8
+chromadb==0.5.5
+groq==0.9.0
+python-dotenv==1.0.1
+unstructured[all-docs]==0.15.7
+pandas==2.2.2
+openpyxl==3.1.5
+xlrd==2.0.1
+pymupdf==1.24.2
+python-docx==1.1.2
+python-pptx==0.6.23
+beautifulsoup4==4.12.3
+Pillow==10.3.0
+pytesseract==0.3.10
+
+
+Python connection snippet:
+    import chromadb
+    client = chromadb.HttpClient(
+        ssl=True,
+        host=https://api.trychroma.com:8000,
+        tenant='abb896fe-305e-4cac-aa2c-31381958c3c2',
+        database='task_rag',
+        headers={
+            'x-chroma-token': 'ck-5DmZWMFJJZKbfkgHwRFjJFRr1v8bzc5fCy2ujUg6SKN5'
+        }
+    )
